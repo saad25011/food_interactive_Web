@@ -1,0 +1,670 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: source_bold;
+    src: url(font/SourceSansPro-Bold.otf);
+}
+
+@font-face {
+    font-family: source;
+    src: url(font/SourceSansPro-Black.otf);
+}
+
+@font-face {
+    font-family: source_light;
+    src: url(font/SourceSansPro-Light.otf);
+}
+
+header{
+    height: 49.5vw;
+    width: auto;
+    margin-bottom: 5vw;
+
+}
+
+.main_heading{
+    height: 5.6vw;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .main_heading{
+        margin-left: 30vw;
+        margin-bottom: 3vh;
+    }
+  
+    .location_main_heading, .location_main_heading img, .location_main_heading h4, .location_main_heading h5, .search_button_header
+    ,.search_button_header button, .search_button_header input, .search_button_header button img, .search_button_header img, .pizza_img_second{
+        display: none;
+    }
+    
+    .second_head .are_you_starving{
+        text-align: center;
+        
+    }
+
+    
+    
+    
+  }
+
+/* ///////////////////////////////////////////log and food wagon \\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.food_wagon{
+    height: 3.25vw;
+    display: flex;
+    width: 15vw;
+}
+
+.food_wagon img{
+    margin-left: 0.9vw;
+    width: 100%;
+    height: 100%;
+}
+
+/* ///////////////////////////////////////////////location & address/////////////////////////////////// */
+
+.location_main_heading{
+    height: 39px;
+    width: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.location_main_heading img{
+    height: 25px;
+    width: 25px;
+} 
+
+.location_main_heading h4{
+    font-family: source_bold;
+    font-size: 1rem;
+    line-height: 18px;
+    margin-left: 3px;
+}
+
+.location_main_heading h5{
+    font-family: source_light;
+    font-size: 1rem;
+    line-height: 12px;
+    
+}
+
+/* ////////////////////////////////////search & button\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+.search_button_header{
+    height: 39px;
+    width: 362px;
+    position: relative;
+    display: flex;
+}
+
+.search_button_header input{
+    height: 40px;
+    position: relative;
+    padding-left: 30px;
+    font-family: source_bold;
+    border: none;
+
+}
+
+
+.search_button_header img{
+    align-self: center;
+    position: absolute;
+    left: 5px;
+    
+}
+
+.search_button_header button{
+    border-radius: 8px;
+    width: 108px;
+    color: orange;
+    font-family: source_bold;
+    font-size: 1rem;
+    position: relative;
+    background-color: transparent;
+    box-shadow: 0px 20px 40px 0px #FFAE004A;
+    border: none;
+    
+}
+
+.search_button_header button:hover{
+    border: 2px solid orange;
+    
+}
+
+
+.search_button_header button img{
+    margin-left: 6px;
+    
+}
+/* ////////////////////////////////////////////second head\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.second_head{
+    height: 43vw;
+    width: 100%;
+    background-image: url(img/vivid-blurred-colorful-wallpaper-background.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second_head .are_you_starving{
+    height: auto;
+    width: 56vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+}
+
+.second_head .are_you_starving .inside_box{
+    
+    border-radius: 10px;
+    background-color: white;
+    
+}
+.second_head .are_you_starving h1{
+    color: white;
+    font-family: source_bold;
+    font-size: 6vw;
+    font-weight: 700;
+    line-height: 7vw;
+       
+}
+
+.second_head .are_you_starving h6{
+    font-family: source_lighter;
+    font-size: 2vw;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+
+}
+.second_head .are_you_starving .inside_box{
+    width: 100%;
+    height: 10vw;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
+}
+.second_head .are_you_starving .inside_box .bike_and_pickup{
+    height: auto;
+    width: 30vw;
+    display: flex;
+    justify-content: space-between;  
+    
+}
+
+.second_head .are_you_starving .inside_box .bike_and_pickup .one_bike button {
+    background-color: transparent;
+    width: 12vw;
+    height: 3.2vw;
+    border-radius: 0.9rem;
+    border: none;
+    margin-left: 1.25rem;
+    
+}
+
+.second_head .are_you_starving .inside_box .bike_and_pickup .one_bike button img{
+    width: 100%;
+    height: 100%;
+}
+
+.second_head .are_you_starving .inside_box .bike_and_pickup .two_pickup button {
+    background-color: transparent;
+    width: 12vw;
+    height: 3.2vw;
+    border-radius: 0.9rem;
+    border: none;
+    margin-left: 1.25rem;
+}
+.second_head .are_you_starving .inside_box .bike_and_pickup .two_pickup button img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.second_head .are_you_starving .inside_box .search_inside_box{
+    height: 4vw;
+    width: 40vw;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1.2rem;
+
+}
+
+.second_head .are_you_starving .inside_box .search_inside_box button img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.second_head .are_you_starving .inside_box .search_inside_box button {
+    border: none;
+
+}
+
+.second_head .are_you_starving .inside_box .search_inside_box input {
+    width: 29vw;
+    border: none;
+    font-family: source_lighter;
+    padding-left: 1vw;
+    font-size: 1.5vw;
+}
+
+.second_head .are_you_starving .inside_box .search_inside_box img{
+    height: 2.2vw;
+    align-self: center;
+}
+
+.second_head .pizza_img_second{
+    height: 17vw;
+    width: 24vw;
+    align-self: flex-end;
+    background-image: url(img/Image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* /////////////////////////////////////grey grid\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.block2{
+    margin-top: 10vw;
+    width: 98%;
+    margin: 0 auto;
+}
+.grey{
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1.3vw;
+    margin-bottom: 4vw;
+    flex-wrap: wrap;
+}
+
+.grey .grey_grid1{
+    height: 25vw;
+    width: 23vw;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+    
+}
+
+.grey .grey_grid1 .img{
+    height: 75%;
+    width: 100%;
+}
+.grey .grey_grid1 .img img{
+    width: 100%;
+    height: 100%;
+}
+
+.grey .grey_grid1 .content button{
+    border: 2px solid transparent;
+    border-radius: 14.6vw;
+}
+
+.grey .grey_grid1 .content h6{
+    font-family: source;
+
+    font-size: 1.6vw;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+
+}
+.grey .grey_grid1 .content button img{
+    width: 100%;
+    height: 100%;
+}
+/* @media only screen and (max-width: 600px) {
+    .block2{
+        margin-top: 10rem;
+        size: 55%;
+
+    }
+
+    .grey .grey_grid1{
+        width: 50%;
+    }
+    .grey .grey_grid1 .content{
+        text-align: center;
+    }
+    .grey .grey_grid1 .content h6{
+        text-align: center;
+    }
+} */
+/* ///////////////////////////////////////////////////how\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.how{
+    align-self: center;
+    height: 42.6vw;
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 4vw;
+}
+
+.how h4{
+    font-family: source_bold;
+    font-size: 2.1vw;
+    font-weight: 400;
+    align-self: center;
+    color: #F17228;
+}
+
+.how .working_flow{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.how .working_flow .flow_grid{
+    width: 18.6vw;
+    height: 18.6vw;
+
+}
+
+.how .working_flow .flow_grid .img{
+    height: 65%;
+    width: 100%;
+}
+
+.how .working_flow .flow_grid .img img{
+    width: 100%;
+    height: 100%;
+}
+
+.how .working_flow .flow_grid .content{
+    height: 15%;
+    width: 100%;
+}
+
+.how .working_flow .flow_grid .content h6{
+    text-align: center;
+    font-family: source_bold;
+    font-size: 1.3vw;
+}
+
+.how .working_flow .flow_grid .content p{
+    text-align: center;
+    font-family: source_light;
+    font-size: 0.8vw;
+}
+
+/* @media only screen and (max-width: 600px) {
+    .how .working_flow #flow1{
+        margin: 0 auto;
+    }
+} */
+/* ////////////////////////////popular items\\\\\\\\\\\\\\\\\\\\\\\ */
+.popular_items{
+    height: 29.3vw;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 8vw;
+}
+
+.popular_items h4{
+    font-family: source_bold;
+    font-size: 3vw;
+    text-align: center;
+}
+
+.popular_items .items_grid{
+    height: 20vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.popular_items .items_grid .arrow1{
+    height: 4vw;
+    width: 4vw;
+    border-radius: 1vw;
+    align-self: center;
+    
+}
+
+.popular_items .items_grid .arrow2{
+    height: 4vw;
+    width: 4vw;
+    border-radius: 1vw;
+    align-self: center;
+}
+
+.popular_items .items_grid .arrow2 img{
+    width: 150%;
+    height: 150%;
+}
+.popular_items .items_grid .arrow1 img{
+    width: 150%;
+    height: 150%;
+}
+
+.popular_items .items_grid .items{
+    width: 18.6vw;
+    height: 18.6vw;
+    display: flex;
+    flex-direction: column;
+}
+
+/* @media only screen and (max-width: 600px){
+    .popular_items .items_grid .items{
+        width: auto;
+        height: auto;
+    }
+} */
+
+.popular_items .items_grid .items .img{
+    height: 10.6vw;
+    width: 100%;
+
+}
+
+.popular_items .items_grid .items .img img{
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+.popular_items .items_grid .items .content{
+    display: flex;
+    justify-content: space-between;
+    height: 6.6vw;
+    width: 100%;
+    flex-direction: column;
+}
+
+.popular_items .items_grid .items .content h5{
+    font-family: source_bold;
+    margin-left: 0.6vw;
+    font-size: 2vw;
+
+}
+.popular_items .items_grid .items .content h6 img{
+    height: 3vw;
+}
+
+
+
+.popular_items .items_grid .items .content .h6 h6{
+    display: flex;
+    align-items: center;
+    font-size: 2vw;
+}
+
+.popular_items .items_grid .items .content p{
+    margin-left: 0.6vw;
+    font-size: 2vw;
+}
+
+.popular_items .items_grid .items button{
+    background-color: #F17228;
+    color: white;
+    height: 3vw;
+    border-radius: 1vw;
+    border: 1px solid #F17228;
+}
+
+/* /////////////////////////////////// Featured Restaurants \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.featured_resturants{
+    height: auto;
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 4vw;
+}
+
+.featured_resturants h4{
+    font-family: source_bold;
+    font-size: 1.3rem;
+    align-self: center;
+}
+.featured_resturants .feature_grid{
+    height: auto;
+    width: 99%;
+    display: flex;
+    justify-content: space-around;  
+    flex-wrap: wrap;
+    gap: 3rem;  
+}
+.featured_resturants .feature_list{
+    width: 14rem;
+    height: 14rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.featured_resturants .feature_list .img{
+    height: 8rem;
+    width: 100%;
+}
+.featured_resturants .feature_list .img img{
+    height: 100%;
+    width: 100%;
+}
+
+.featured_resturants .feature_list .name{
+    height: 2.2rem;
+    width: 60%;
+}
+
+.featured_resturants .feature_list img{
+    height: 100%;
+    width: 100%;
+}
+
+.featured_resturants .feature_list button{
+    font-family: source_bold;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    background-color:  #F1722833;
+    color: #F17228;
+    border: 1px solid #F17228;
+   
+}
+.featured_resturants .feature_list button:hover{
+    font-size: 1.2rem;
+}
+
+.featured_resturants .feature_list #open_now{
+    background-color: #79B93C33;
+    color: #79B93C;
+    border: 1px solid #79B93C;
+}
+
+.featured_resturants button{
+    width: 11rem;
+    height: 2rem;
+    border-radius: 1rem;
+    align-self: center;
+    background-color: #F17228;
+    border: 1px solid #F17228;
+    color: white;
+    font-family: source_bold;
+
+}
+
+/* //////////////////////////////////////////////////////////search by food\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+.search_by_food{
+    margin-top: 5vw;
+    height: auto;
+    width: auto;
+}
+.search_by_food h4{
+    font-family: source_bold;
+    font-size: 3vw;
+    margin-bottom: 3vw;
+}
+
+.search_by_food .circle_food{
+    height: 20vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.search_by_food .circle_food .food_grid{
+    height: 14vw;
+    width: 14vw;
+    border: 1px solid rebeccapurple;
+    border-radius: 7vw;
+    
+}
+
+.search_by_food .circle_food .food_grid img{
+    width: 100%;
+    height: 100%;
+}
+
+.inatall_app1{
+    height: 23vw;
+    background-image: url(img/Features.png);
+    background-size: cover;
+}
+
+.inatall_app2{
+    height: 23vw;
+    background-image: url(img/App\ Download.png);
+    background-size: cover;
+}
+
+.process{
+    margin-top: 0vw;
+    height: 20vw;
+    background-image: url(img/CTA\ +\ Footer.png);
+    background-size: cover;
+}
+
+footer{
+    height: 40vw;
+    border: 2px solid black;
+    background-image: url(img/Footer.png);
+    background-size: cover;
+}
